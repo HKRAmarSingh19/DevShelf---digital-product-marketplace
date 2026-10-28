@@ -1,0 +1,64 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DEFAULT_PLATFORM_FEE_PERCENTAGE = exports.CURRENCY = exports.LICENSE_TYPES = exports.ENTITLEMENT_STATUS = exports.PAYMENT_STATUS = exports.ORDER_STATUS = exports.PRODUCT_STATUS = exports.PRODUCT_TYPES = exports.USER_STATUS = exports.SELLER_STATUS = exports.USER_ROLES = void 0;
+exports.USER_ROLES = {
+    USER: 'USER',
+    ADMIN: 'ADMIN',
+};
+exports.SELLER_STATUS = {
+    NOT_APPLIED: 'NOT_APPLIED',
+    PENDING: 'PENDING',
+    APPROVED: 'APPROVED',
+    REJECTED: 'REJECTED',
+    SUSPENDED: 'SUSPENDED',
+};
+exports.USER_STATUS = {
+    ACTIVE: 'ACTIVE',
+    SUSPENDED: 'SUSPENDED',
+    DELETED: 'DELETED',
+};
+exports.PRODUCT_TYPES = {
+    SOURCE_CODE: 'SOURCE_CODE',
+    EBOOK: 'EBOOK',
+    COURSE: 'COURSE',
+    UI_KIT: 'UI_KIT',
+    TEMPLATE: 'TEMPLATE',
+    DEVELOPER_TOOL: 'DEVELOPER_TOOL',
+    OTHER: 'OTHER',
+};
+exports.PRODUCT_STATUS = {
+    DRAFT: 'DRAFT',
+    PENDING_REVIEW: 'PENDING_REVIEW',
+    PUBLISHED: 'PUBLISHED',
+    REJECTED: 'REJECTED',
+    ARCHIVED: 'ARCHIVED',
+};
+exports.ORDER_STATUS = {
+    PENDING: 'PENDING',
+    PAID: 'PAID',
+    FAILED: 'FAILED',
+    CANCELLED: 'CANCELLED',
+    PARTIALLY_REFUNDED: 'PARTIALLY_REFUNDED',
+    REFUNDED: 'REFUNDED',
+};
+exports.PAYMENT_STATUS = {
+    CREATED: 'CREATED',
+    AUTHORIZED: 'AUTHORIZED',
+    CAPTURED: 'CAPTURED',
+    FAILED: 'FAILED',
+    REFUNDED: 'REFUNDED',
+};
+exports.ENTITLEMENT_STATUS = {
+    ACTIVE: 'ACTIVE',
+    REVOKED: 'REVOKED',
+};
+exports.LICENSE_TYPES = {
+    STANDARD: 'STANDARD',
+    COMMERCIAL: 'COMMERCIAL',
+    EXTENDED: 'EXTENDED',
+};
+exports.CURRENCY = {
+    INR: 'INR',
+};
+exports.DEFAULT_PLATFORM_FEE_PERCENTAGE = 10; // 10% platform fee
+//# sourceMappingURL=index.js.map

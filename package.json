@@ -1,0 +1,26 @@
+{
+  "name": "devshelf-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DevShelf - Multi-vendor digital product marketplace (MERN)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@devshelf/api & npm run dev --workspace=@devshelf/web",
+    "dev:api": "npm run dev --workspace=@devshelf/api",
+    "dev:web": "npm run dev --workspace=@devshelf/web",
+    "build": "npm run build --workspace=@devshelf/shared && npm run build --workspace=@devshelf/api && npm run build --workspace=@devshelf/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "seed": "npm run seed --workspace=@devshelf/api",
+    "create-admin": "npm run create-admin --workspace=@devshelf/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.7.3"
+  }
+}
